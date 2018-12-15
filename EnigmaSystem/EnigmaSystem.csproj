@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BDE3ED31-B495-44E5-B479-2AFC6755F705}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EnigmaSystem</RootNamespace>
+    <AssemblyName>EnigmaSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EnigmaClass">
+      <HintPath>..\..\..\..\Biblioteca de Classe\DLL\EnigmaClass.dll</HintPath>
+    </Reference>
+    <Reference Include="EnigmaClass.CRUD">
+      <HintPath>..\..\..\..\Biblioteca de Classe\DLL\EnigmaClass.CRUD.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_Add_Pergunta_Resposta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Add_Pergunta_Resposta.Designer.cs">
+      <DependentUpon>Form_Add_Pergunta_Resposta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Cadastro.Designer.cs">
+      <DependentUpon>Form_Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Conteudo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Conteudo.Designer.cs">
+      <DependentUpon>Form_Conteudo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Desempenho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Desempenho.Designer.cs">
+      <DependentUpon>Form_Desempenho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Exercicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Exercicios.Designer.cs">
+      <DependentUpon>Form_Exercicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ExibirNota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ExibirNota.Designer.cs">
+      <DependentUpon>Form_ExibirNota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Forum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Forum.Designer.cs">
+      <DependentUpon>Form_Forum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Home.Designer.cs">
+      <DependentUpon>Form_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Load.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Load.Designer.cs">
+      <DependentUpon>Form_Load.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Menu.Designer.cs">
+      <DependentUpon>Form_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_MinhasPerguntasRespostas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MinhasPerguntasRespostas.Designer.cs">
+      <DependentUpon>Form_MinhasPerguntasRespostas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Notas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Notas.Designer.cs">
+      <DependentUpon>Form_Notas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Perfil.Designer.cs">
+      <DependentUpon>Form_Perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioAtual.cs" />
+    <EmbeddedResource Include="Form_Add_Pergunta_Resposta.resx">
+      <DependentUpon>Form_Add_Pergunta_Resposta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Cadastro.resx">
+      <DependentUpon>Form_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Conteudo.resx">
+      <DependentUpon>Form_Conteudo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Desempenho.resx">
+      <DependentUpon>Form_Desempenho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Exercicios.resx">
+      <DependentUpon>Form_Exercicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ExibirNota.resx">
+      <DependentUpon>Form_ExibirNota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Forum.resx">
+      <DependentUpon>Form_Forum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Home.resx">
+      <DependentUpon>Form_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Load.resx">
+      <DependentUpon>Form_Load.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Menu.resx">
+      <DependentUpon>Form_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MinhasPerguntasRespostas.resx">
+      <DependentUpon>Form_MinhasPerguntasRespostas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Notas.resx">
+      <DependentUpon>Form_Notas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Perfil.resx">
+      <DependentUpon>Form_Perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enigma_Logo_V2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anonimo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avancar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sair %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EfeitoFundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avancar %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sair%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sair %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enigma_Texto.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anel %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enigma_Logo_V2_transparente %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enigma_Logo_V2_transparente %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enigma_Logo_V2_Justo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avancar_vermelho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botao %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botao_Fechar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botao-menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azul.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enigma_Logo_V2_transparente %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enigma_Logo_V2_Justo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotaoBanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\x.png" />
+    <None Include="Resources\dislike_ativo.png" />
+    <None Include="Resources\dislike.png" />
+    <None Include="Resources\Enigma_Logo_V5_Justo.png" />
+    <None Include="Resources\Enigma_Logo_NomeV2.png" />
+    <Content Include="Resources\like.png" />
+    <Content Include="Resources\like_ativo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnigmaSystem", "EnigmaSystem\EnigmaSystem.csproj", "{BDE3ED31-B495-44E5-B479-2AFC6755F705}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "EnigmaSetup", "EnigmaSetup\EnigmaSetup.vdproj", "{1D490653-CF16-4C9B-BE29-9F7B805D67A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDE3ED31-B495-44E5-B479-2AFC6755F705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE3ED31-B495-44E5-B479-2AFC6755F705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE3ED31-B495-44E5-B479-2AFC6755F705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE3ED31-B495-44E5-B479-2AFC6755F705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D490653-CF16-4C9B-BE29-9F7B805D67A2}.Debug|Any CPU.ActiveCfg = Debug
+		{1D490653-CF16-4C9B-BE29-9F7B805D67A2}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1403F8A-CD9B-405A-BC81-FF22C644B832}
+	EndGlobalSection
+EndGlobal
